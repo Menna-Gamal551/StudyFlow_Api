@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\StudyFlow_Api.props" />
+</Project>
