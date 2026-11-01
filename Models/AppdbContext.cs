@@ -14,7 +14,8 @@ namespace StudyFlow_Api.Models
             {
                 entity.HasKey(e=>e.Id);
                 entity.Property(e => e.SubjectName).IsRequired().HasMaxLength(100);
-
+                entity.HasIndex(e => e.SubjectName).IsUnique();
+              
             });
             modelBuilder.Entity<Assignment>(entity =>
             {

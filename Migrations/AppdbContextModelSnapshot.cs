@@ -33,7 +33,7 @@ namespace StudyFlow_Api.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DueDate")
+                    b.Property<DateTime?>("DueDate")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Priority")
@@ -71,6 +71,9 @@ namespace StudyFlow_Api.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("SubjectName")
+                        .IsUnique();
 
                     b.ToTable("Subjects");
                 });

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StudyFlow_Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d932f367b54cc94a00c087689a9e105c6fe2e7e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("StudyFlow_Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StudyFlow_Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

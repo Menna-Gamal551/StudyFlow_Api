@@ -1,5 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
+using StudyFlow_Api.DTOs;
 using StudyFlow_Api.Models;
 
 namespace StudyFlow_Api
@@ -12,6 +13,13 @@ namespace StudyFlow_Api
 
             // Add services to the container.
             builder.Services.AddDbContext<AppdbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("MyCon")));
+            builder.Services.AddAutoMapper(op =>
+            {
+                op.CreateMap<Subject, SubjectDTO>().ReverseMap();
+                op.CreateMap<Subject, CreateSubjectDTO>().ReverseMap();
+                op.CreateMap<Subject, UpdateSubjectDTO>().ReverseMap();
+            }
+            );
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

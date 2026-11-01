@@ -142,3 +142,7 @@ C:\Users\merra\source\repos\StudyFlow_Api\obj\Debug\net8.0\refint\StudyFlow_Api.
 C:\Users\merra\source\repos\StudyFlow_Api\obj\Debug\net8.0\StudyFlow_Api.pdb
 C:\Users\merra\source\repos\StudyFlow_Api\obj\Debug\net8.0\StudyFlow_Api.genruntimeconfig.cache
 C:\Users\merra\source\repos\StudyFlow_Api\obj\Debug\net8.0\ref\StudyFlow_Api.dll
+C:\Users\merra\source\repos\StudyFlow_Api\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\merra\source\repos\StudyFlow_Api\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\merra\source\repos\StudyFlow_Api\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\merra\source\repos\StudyFlow_Api\obj\Debug\net8.0\StudyFlow_Api.sourcelink.json
