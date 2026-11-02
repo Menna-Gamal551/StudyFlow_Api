@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StudyFlow_Api.DTOs;
 using StudyFlow_Api.Models;
+using System.Diagnostics.Eventing.Reader;
+using static StudyFlow_Api.SD;
 
 namespace StudyFlow_Api.Controllers
 {
@@ -21,14 +23,14 @@ namespace StudyFlow_Api.Controllers
         }
 
 
-        [HttpGet]
-        public async Task<ActionResult<ApiResponse<IEnumerable<AssignmentDTO>>>> GetAll()
-        {
-            var assignments = await _db.Assignments.Include(e => e.Subject).ToListAsync();
+        //[HttpGet]
+        //public async Task<ActionResult<ApiResponse<IEnumerable<AssignmentDTO>>>> GetAll()
+        //{
+        //    var assignments = await _db.Assignments.Include(e => e.Subject).ToListAsync();
 
 
-            return Ok(ApiResponse<IEnumerable<AssignmentDTO>>.Ok("Data retrived successfully", _mapper.Map<List<AssignmentDTO>>(assignments)));
-        }
+        //    return Ok(ApiResponse<IEnumerable<AssignmentDTO>>.Ok("Data retrived successfully", _mapper.Map<List<AssignmentDTO>>(assignments)));
+        //}
         [HttpGet("{id}")]
         public async Task<ActionResult<ApiResponse<AssignmentDTO>>> GetById(int id)
         {
@@ -41,8 +43,83 @@ namespace StudyFlow_Api.Controllers
             {
                 return NotFound(ApiResponse<object>.NotFound($"Assignment with id : {id} not found"));
             }
-
+           
             return Ok(ApiResponse<AssignmentDTO>.Ok("Data retrived successfully", _mapper.Map<AssignmentDTO>(assignment)));
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<ApiResponse<IEnumerable<AssignmentDTO>>>> GetBy(string ?filterby,string ?filterquery)
+        {
+            var assignmentQuery =  _db.Assignments.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(filterby)&&!string.IsNullOrWhiteSpace(filterquery))
+            {
+                switch (filterby.ToLower())
+                {
+                    case "subjectname":
+
+                        assignmentQuery=assignmentQuery.Where(f => f.Subject.SubjectName.ToLower().Trim().Contains(filterquery.ToLower().Trim()));
+                        break;
+
+                    case "status":
+                        if (Enum.TryParse<SD.Status>(filterquery, true, out var status)&&Enum.IsDefined(typeof(SD.Status), status))
+                            assignmentQuery=assignmentQuery.Where(f => f.Status==status);
+                        else
+                        {
+                            return BadRequest(ApiResponse<object>.BadRequest("Invalid filtering or filtering by"));
+                        }
+                        break;
+
+                    case "priority":
+                        if (Enum.TryParse<SD.Priority>(filterquery, true, out var priority)&&Enum.IsDefined(typeof(SD.Priority), priority))
+                            assignmentQuery=assignmentQuery.Where(f => f.Priority==priority);
+                        else
+                        {
+                            return BadRequest(ApiResponse<object>.BadRequest("Invalid filtering or filtering by"));
+                        }
+                        break;
+
+                    default:
+                        return BadRequest(ApiResponse<object>.BadRequest("Invalid filtering or filtering by"));
+
+
+                }
+            }
+            else if (string.IsNullOrWhiteSpace(filterby)&&string.IsNullOrWhiteSpace(filterquery))
+            {
+                assignmentQuery=assignmentQuery.OrderBy(e => e.Id);
+            }
+            else 
+            {
+                return BadRequest(ApiResponse<object>.BadRequest("Invalid filtering or filtering by"));
+
+            }
+            var assignments = await assignmentQuery.Include(e => e.Subject).ToListAsync();
+
+            return Ok(ApiResponse<IEnumerable<AssignmentDTO>>.Ok("Data retrived successfully", _mapper.Map<List<AssignmentDTO>>(assignments)));
+        }
+        [HttpGet]
+        public async Task<ActionResult<ApiResponse<IEnumerable<AssignmentDTO>>>> GetUpcomingAssignments()
+        {
+
+            var currentDate = DateTime.UtcNow;
+            var expireDate = currentDate.AddDays(7);
+
+            var assignments = await  _db.Assignments.Include(e=>e.Subject).Where(e =>e.DueDate>=currentDate&& e.DueDate<=expireDate && e.Status!=SD.Status.Completed).ToListAsync();
+               
+            return Ok(ApiResponse<IEnumerable<AssignmentDTO>>.Ok("Data retrived successfully", _mapper.Map<List<AssignmentDTO>>(assignments)));
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<ApiResponse<IEnumerable<AssignmentDTO>>>> GetOverdueAssignments()
+        {
+
+            var currentDate = DateTime.UtcNow;
+            
+
+            var assignments = await _db.Assignments.Include(e => e.Subject).Where(e => e.DueDate<currentDate && e.Status!=SD.Status.Completed).ToListAsync();
+
+            return Ok(ApiResponse<IEnumerable<AssignmentDTO>>.Ok("Data retrived successfully", _mapper.Map<List<AssignmentDTO>>(assignments)));
         }
 
         [HttpPost]
