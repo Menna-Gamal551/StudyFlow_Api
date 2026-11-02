@@ -18,6 +18,12 @@ namespace StudyFlow_Api
                 op.CreateMap<Subject, SubjectDTO>().ReverseMap();
                 op.CreateMap<Subject, CreateSubjectDTO>().ReverseMap();
                 op.CreateMap<Subject, UpdateSubjectDTO>().ReverseMap();
+                op.CreateMap<Assignment, CreateAssignmentDTO>().ReverseMap();
+                op.CreateMap<Assignment, UpdateAssignmentDTO>().ReverseMap();
+                op.CreateMap<Assignment, AssignmentDTO>().ForMember(
+                    dest => dest.SubjectName,
+                    op => op.MapFrom(src=>src.Subject!=null?src.Subject.SubjectName:null)
+                    ); 
             }
             );
             builder.Services.AddControllers();

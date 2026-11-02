@@ -38,13 +38,13 @@ namespace StudyFlow_Api.Controllers
             {
                 return BadRequest(ApiResponse<object>.BadRequest("please enter id greater than 0"));
             }
-            var subjectbyId = await _db.Subjects.FirstOrDefaultAsync(e=>e.Id==id);
-            if (subjectbyId==null)
+            var subjectby = await _db.Subjects.FirstOrDefaultAsync(e=>e.Id==id);
+            if (subjectby==null)
             { 
             return NotFound(ApiResponse<object>.NotFound($"subject with id : {id} not found"));
             }
 
-            return Ok(ApiResponse<SubjectDTO>.Ok("Data retrived successfully", _mapper.Map<SubjectDTO>(subjectbyId)));
+            return Ok(ApiResponse<SubjectDTO>.Ok("Data retrived successfully", _mapper.Map<SubjectDTO>(subjectby)));
         }
 
         [HttpPost]
