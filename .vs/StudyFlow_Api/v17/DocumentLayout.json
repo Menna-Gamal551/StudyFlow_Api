@@ -66,8 +66,7 @@
               "RelativeToolTip": "Controllers\\SubjectController.cs",
               "ViewState": "AQIAAFkAAAAAAAAAAAAuwGUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T15:51:07.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-02T15:51:07.232Z"
             },
             {
               "$type": "Document",
@@ -77,7 +76,7 @@
               "RelativeDocumentMoniker": "Controllers\\AssignmentController.cs",
               "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Controllers\\AssignmentController.cs",
               "RelativeToolTip": "Controllers\\AssignmentController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAuwH0AAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAuwDYAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-02T14:58:54.501Z",
               "EditorCaption": ""
@@ -92,8 +91,7 @@
               "RelativeToolTip": "DTOs\\AssignmentDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T14:47:29.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-02T14:47:29.913Z"
             }
           ]
         }

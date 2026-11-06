@@ -5,6 +5,9 @@ using Microsoft.EntityFrameworkCore;
 using StudyFlow_Api.DTOs;
 using StudyFlow_Api.Models;
 using System.Diagnostics.Eventing.Reader;
+using System.Globalization;
+using System.Linq;
+using System.Text;
 using static StudyFlow_Api.SD;
 
 namespace StudyFlow_Api.Controllers
@@ -48,9 +51,14 @@ namespace StudyFlow_Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<ApiResponse<IEnumerable<AssignmentDTO>>>> GetBy(string ?filterby,string ?filterquery)
+        public async Task<ActionResult<ApiResponse<IEnumerable<AssignmentDTO>>>> GetAssignments(string ?filterby,string ?filterquery,string?sortedby, 
+            string? sortOrder = "asc",int page=1,int pageSize=5)
         {
             var assignmentQuery =  _db.Assignments.AsQueryable();
+            filterquery = filterquery?.Trim();
+            if (page<1) page=1;
+            if (pageSize<1) pageSize=5;
+            if (pageSize>100) pageSize=100;
 
             if (!string.IsNullOrWhiteSpace(filterby)&&!string.IsNullOrWhiteSpace(filterquery))
             {
@@ -58,7 +66,7 @@ namespace StudyFlow_Api.Controllers
                 {
                     case "subjectname":
 
-                        assignmentQuery=assignmentQuery.Where(f => f.Subject.SubjectName.ToLower().Trim().Contains(filterquery.ToLower().Trim()));
+                        assignmentQuery=assignmentQuery.Where(f => f.Subject.SubjectName.ToLower().Trim().Contains(filterquery.ToLower()));
                         break;
 
                     case "status":
@@ -94,9 +102,52 @@ namespace StudyFlow_Api.Controllers
                 return BadRequest(ApiResponse<object>.BadRequest("Invalid filtering or filtering by"));
 
             }
+            if (!string.IsNullOrWhiteSpace(sortedby))
+            {
+               
+                if (sortOrder?.ToLower()!="desc"&&sortOrder?.ToLower()!="asc")
+                {
+                    return BadRequest(ApiResponse<object>.BadRequest("Invalid sorting "));
+                }
+
+                var isDescending = sortOrder.ToLower()=="desc";
+                assignmentQuery=  sortedby.ToLower() switch
+                {
+                    "subjectid" => isDescending ? assignmentQuery.OrderByDescending(e => e.SubjectId) : assignmentQuery.OrderBy(e => e.SubjectId),
+                    "status" => isDescending ? assignmentQuery.OrderByDescending(e => e.Status) : assignmentQuery.OrderBy(e => e.Status),
+                    "priority" => isDescending ? assignmentQuery.OrderByDescending(e => e.Priority) : assignmentQuery.OrderBy(e => e.Priority),
+                    "duedate" => isDescending ? assignmentQuery.OrderByDescending(e => e.DueDate).ThenBy(e => e.Id) : assignmentQuery.OrderBy(e => e.DueDate).ThenBy(e => e.Id),
+                    _ => assignmentQuery.OrderBy(e=>e.Id)
+                }; 
+            }
+
+            var skip = (page-1)*pageSize;
+            var totalAssignment = await assignmentQuery.CountAsync();
+            var totalPages = (int)Math.Ceiling((double) totalAssignment /pageSize);
+
+            assignmentQuery= assignmentQuery.Skip(skip).Take(pageSize);
             var assignments = await assignmentQuery.Include(e => e.Subject).ToListAsync();
 
-            return Ok(ApiResponse<IEnumerable<AssignmentDTO>>.Ok("Data retrived successfully", _mapper.Map<List<AssignmentDTO>>(assignments)));
+            var dtoResponseAssignment= _mapper.Map<List<AssignmentDTO>>(assignments);
+
+            var messagebuilder = new StringBuilder();
+            messagebuilder.Append($"a successful Retrived {dtoResponseAssignment.Count} assignment/s ");
+            messagebuilder.Append($"(Page {page} of {totalPages}),{totalAssignment} total records ");
+            if (!string.IsNullOrEmpty(filterby)&&!string.IsNullOrEmpty(filterquery))
+            {
+                messagebuilder.Append($"filtered by {filterby}: '{filterquery}'");
+            }
+            if (!string.IsNullOrEmpty(sortedby))
+            {
+                messagebuilder.Append($"sorted by {sortedby}: '{sortOrder?.ToLower()??"asc"}' ");
+            }
+
+            Response.Headers.Append("X-Pagination-CurrentPage", page.ToString());
+            Response.Headers.Append("X-Pagination-PageSize", pageSize.ToString());
+            Response.Headers.Append("X-Pagination-TotalPages", totalPages.ToString());
+            Response.Headers.Append("X-Pagination-TotalAssignments", totalAssignment.ToString());
+
+            return Ok(ApiResponse<IEnumerable<AssignmentDTO>>.Ok(messagebuilder.ToString(), dtoResponseAssignment));
         }
         [HttpGet]
         public async Task<ActionResult<ApiResponse<IEnumerable<AssignmentDTO>>>> GetUpcomingAssignments()
