@@ -1,7 +1,11 @@
 
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using StudyFlow_Api.DTOs;
-using StudyFlow_Api.Models;
+using StudyFlow_Api.Data;
+using StudyFlow_Api.Data.DTOs;
+using StudyFlow_Api.Data.Models;
+using StudyFlow_Api.Services;
+using StudyFlow_Api.Services.IService;
 
 namespace StudyFlow_Api
 {
@@ -20,12 +24,15 @@ namespace StudyFlow_Api
                 op.CreateMap<Subject, UpdateSubjectDTO>().ReverseMap();
                 op.CreateMap<Assignment, CreateAssignmentDTO>().ReverseMap();
                 op.CreateMap<Assignment, UpdateAssignmentDTO>().ReverseMap();
+                op.CreateMap<User, UserDTO>().ReverseMap();
                 op.CreateMap<Assignment, AssignmentDTO>().ForMember(
                     dest => dest.SubjectName,
                     op => op.MapFrom(src=>src.Subject!=null?src.Subject.SubjectName:null)
                     ); 
             }
             );
+            builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

@@ -3,24 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\controllers\\assignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:controllers\\assignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\dtos\\assignmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:dtos\\assignmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\services\\iservice\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:services\\iservice\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\data\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:data\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\data\\dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:data\\dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\dtos\\updateassignmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:dtos\\updateassignmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\data\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:data\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\controllers\\assignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:controllers\\assignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\data\\dtos\\assignmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:data\\dtos\\assignmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|c:\\users\\merra\\source\\repos\\studyflow_api\\data\\dtos\\updateassignmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38523D8A-0EF2-4DBA-8505-84E082CD5318}|StudyFlow_Api.csproj|solutionrelative:data\\dtos\\updateassignmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,35 +62,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateAssignmentDTO.cs",
-              "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\DTOs\\UpdateAssignmentDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\UpdateAssignmentDTO.cs",
-              "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\DTOs\\UpdateAssignmentDTO.cs",
-              "RelativeToolTip": "DTOs\\UpdateAssignmentDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "LoginResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\DTOs\\LoginResponseDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\LoginResponseDTO.cs",
+              "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\DTOs\\LoginResponseDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\LoginResponseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T16:53:12.181Z"
+              "WhenOpened": "2026-11-08T19:22:07.804Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T18:47:34.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAwEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T18:13:39.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Services\\IService\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\IService\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Services\\IService\\IAuthService.cs",
+              "RelativeToolTip": "Services\\IService\\IAuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T18:13:26.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\DTOs\\RegisterRequestDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\RegisterRequestDTO.cs",
+              "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\DTOs\\RegisterRequestDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\RegisterRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T17:58:27.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\UserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T17:57:20.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppdbContext.cs",
+              "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\AppdbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppdbContext.cs",
+              "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\AppdbContext.cs",
+              "RelativeToolTip": "Data\\AppdbContext.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T17:53:36.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\Models\\User.cs",
+              "RelativeToolTip": "Data\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T17:50:55.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UpdateAssignmentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\DTOs\\UpdateAssignmentDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\UpdateAssignmentDTO.cs",
+              "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\DTOs\\UpdateAssignmentDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\UpdateAssignmentDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T16:53:12.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBQAAAAnAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAACAAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T16:32:06.482Z"
+              "WhenOpened": "2026-11-02T16:32:06.482Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "SubjectController.cs",
               "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Controllers\\SubjectController.cs",
               "RelativeDocumentMoniker": "Controllers\\SubjectController.cs",
@@ -66,32 +204,34 @@
               "RelativeToolTip": "Controllers\\SubjectController.cs",
               "ViewState": "AQIAAFkAAAAAAAAAAAAuwGUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T15:51:07.232Z"
+              "WhenOpened": "2026-11-02T15:51:07.232Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "AssignmentController.cs",
               "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Controllers\\AssignmentController.cs",
               "RelativeDocumentMoniker": "Controllers\\AssignmentController.cs",
               "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Controllers\\AssignmentController.cs",
               "RelativeToolTip": "Controllers\\AssignmentController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAuwDYAAABAAAAA",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAAADcAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-02T14:58:54.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "AssignmentDTO.cs",
-              "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\DTOs\\AssignmentDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\AssignmentDTO.cs",
-              "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\DTOs\\AssignmentDTO.cs",
-              "RelativeToolTip": "DTOs\\AssignmentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\DTOs\\AssignmentDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\AssignmentDTO.cs",
+              "ToolTip": "C:\\Users\\merra\\source\\repos\\StudyFlow_Api\\Data\\DTOs\\AssignmentDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\AssignmentDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T14:47:29.913Z"
+              "WhenOpened": "2026-11-02T14:47:29.913Z",
+              "EditorCaption": ""
             }
           ]
         }

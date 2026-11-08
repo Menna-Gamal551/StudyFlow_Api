@@ -1,4 +1,4 @@
-﻿namespace StudyFlow_Api.DTOs
+﻿namespace StudyFlow_Api.Data.DTOs
 {
     public class ApiResponse<TData>
     {

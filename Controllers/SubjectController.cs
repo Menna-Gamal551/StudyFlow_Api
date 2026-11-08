@@ -4,8 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
-using StudyFlow_Api.DTOs;
-using StudyFlow_Api.Models;
+using StudyFlow_Api.Data;
+using StudyFlow_Api.Data.DTOs;
+using StudyFlow_Api.Data.Models;
 
 namespace StudyFlow_Api.Controllers
 {

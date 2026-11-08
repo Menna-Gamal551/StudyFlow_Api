@@ -1,11 +1,9 @@
 ﻿using StudyFlow_Api.Models;
 
-namespace StudyFlow_Api.DTOs
+namespace StudyFlow_Api.Data.DTOs
 {
-    public class UpdateAssignmentDTO
+    public class CreateAssignmentDTO
     {
-        public int Id { get; set; }
-
         public required string Title { get; set; } = string.Empty;
         public string? Description { get; set; }
         public DateTime? DueDate { get; set; }

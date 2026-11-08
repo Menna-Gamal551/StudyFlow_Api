@@ -1,8 +1,11 @@
-﻿namespace StudyFlow_Api.DTOs
+﻿using StudyFlow_Api.Models;
+
+namespace StudyFlow_Api.Data.DTOs
 {
-    public class SubjectDTO
+    public class UpdateSubjectDTO
     {
         public int Id { get; set; }
+
         public required string SubjectName { get; set; }
     }
 }

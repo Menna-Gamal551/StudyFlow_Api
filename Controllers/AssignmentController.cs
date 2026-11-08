@@ -2,8 +2,9 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using StudyFlow_Api.DTOs;
-using StudyFlow_Api.Models;
+using StudyFlow_Api.Data;
+using StudyFlow_Api.Data.DTOs;
+using StudyFlow_Api.Data.Models;
 using System.Diagnostics.Eventing.Reader;
 using System.Globalization;
 using System.Linq;
